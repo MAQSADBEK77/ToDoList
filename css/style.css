@@ -1,0 +1,74 @@
+.container {
+    max-width: 710px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.time-block {
+    text-align: center;
+    font-size: 23px;
+    color: green;
+}
+.form-control {
+    width: 600px;
+    padding: 10px 20px;
+}
+.add_button {
+    height: 44px;
+}
+.danger-text {
+    color: red;
+    font-style: italic;
+    margin-left: 20px;
+}
+.text-child {
+    padding: 8px 24px !important;
+    text-align: justify;
+}
+.img-icon {
+    margin: -20px 0;
+}
+.img-icon img:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.edit_input {
+    margin: 0 auto;
+    width: 460px;
+}
+
+
+
+
+.border-danger {
+    border: 1.5px solid red;
+    box-shadow: none !important;
+}
+
+
+
+
+
+.opacity_child {
+    opacity: 0.5;
+}
+.text-child:hover {
+    cursor: default;
+    background-color: rgb(159, 255, 255);
+    user-select: none;
+}
+.by {
+    text-align: center;
+    font-size: 16px;
+}
+.by a:hover {
+    text-decoration: underline !important;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+    
