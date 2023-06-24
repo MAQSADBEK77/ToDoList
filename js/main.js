@@ -1,6 +1,7 @@
 // Vaqtni htmlga chiqarish
 let text_do = document.querySelector(".text_do");
 let time_html = document.querySelector(".time-block span");
+let container = document.querySelector('.container')
 setInterval(() => {
   let live_data = new Date();
   time_html.innerHTML = `${live_data.getFullYear()}.${
@@ -102,9 +103,11 @@ function editActive(index) {
   let modal = document.querySelector(".modal");
   modal.querySelector("#exampleFormControlInput2").value = text_data;
   modal.classList.add("d-flex");
+  container.classList.add('opacity-25')
   document.querySelector(".form_edit").addEventListener("submit", (e) => {
     let modal_control = document.querySelector(".edit_input").value.trim();
     e.preventDefault();
+    container.classList.remove("opacity-25");
     if (modal_control) {
       let live_data = new Date();
       todos[index].Text = modal_control;
@@ -132,6 +135,7 @@ document.addEventListener("keydown", (e) => {
 });
 function modal_close(e) {
   document.querySelector(".modal").classList.remove("d-flex");
+  container.classList.remove("opacity-25");
 }
 // Child block 2 marta bosilganda belgilash
 function text_child(i) {
